@@ -1,0 +1,13 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Results</title></head>
+<body>
+<h1>Run Results</h1>
+<p><a href="/">← Back</a></p>
+<table border="1">
+<tr><th>#</th><th>URL</th><th>Ping</th><th>IndexCheck</th></tr>
+{% for r in rows %}
+<tr><td>{{ loop.index }}</td><td>{{ r[0] }}</td><td>{{ r[1] }}</td><td>{{ r[2] }}</td></tr>
+{% endfor %}
+</table>
+<p><a href="/download/{{ report_file }}">⬇️ Download CSV</a></p>
+</body></html>
