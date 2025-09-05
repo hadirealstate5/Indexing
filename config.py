@@ -1,5 +1,6 @@
 # config.py
-BING_API_KEY = 'C507D6C08ABF84479FEF3FB48B45044A'
+BING_API_KEY = '52b172f1049a46248a53d0c0e9458960'
 SITE_URL = 'https://github.com/hadirealstate5/Indexing.git'
 GITHUB_REPO = 'https://github.com/hadirealstate5/Indexing.git'
+
 
