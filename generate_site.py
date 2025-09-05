@@ -1,6 +1,7 @@
+from datetime import datetime, timezone
 import os, requests
 from config import BING_API_KEY, SITE_URL, GITHUB_REPO
-from datetime import datetime
+from datetime import datetime, timezone
 import subprocess
 
 BACKLINKS_FILE = 'backlinks.txt'
@@ -61,3 +62,4 @@ for i in range(1, len(backlinks)+1):
         print(f"[BING] Submitted: {page_url} -> {response.json()}")
     except Exception as e:
         print(f"[ERROR] {page_url}: {e}")
+
